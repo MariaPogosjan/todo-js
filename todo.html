@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To-do</title>
+    <link rel="stylesheet" href="todo.css" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet"/>
+  </head>
+  <body>
+    <main>
+      <div class="todo-container" data-todo>
+        <div class="todo-container__date-wrapper">
+          <h1 class="todo-container__day" data-current-day></h1>
+          <div data-current-date class="todo-container__date"></div>
+          <select name="tasks" id="tasks" data-filter-tasks class="todo-container__filter">
+            <option value="all">All</option>
+            <option value="completed">Completed</option>
+            <option value="uncompleted">Uncompleted</option>
+          </select>
+          
+        </div>
+        <div  class="todo-container__form-wrapper">
+          <div data-todo-item></div>
+          <form data-form>
+            <div class="todo-container__form-input-wrapper">
+              <label class="todo-container__form-label" for="taskDescripition">Add new task</label>
+              <input type="text" data-task-input class="todo-container__task-input" id="taskDescripition" name="taskDescripition" placeholder="Add new task"/>
+              <input type="submit" value="+">
+            </div>
+          </form>
+        </div>
+      </div> 
+    </main>
+    <script type="module" src="todo.js"></script>
+  </body>
+</html>
