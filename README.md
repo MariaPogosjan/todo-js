@@ -3,7 +3,7 @@ This is a simple To-do app where you can add, edit and remove a taks. You can al
 
 # What I've Learned  🧠
 - DOM Manipulation
-- Classlist
+- CSS
 - ChildNodes
 - Forms
 
